@@ -1,0 +1,168 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width =device-width,initial-scale=1.0">
+        <title>Online clothing store</title>
+        <link rel="stylesheet" href="style.css">
+        <link  href="https://fonts.googleapis.com/css2?
+        family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+         integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    </head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/icons/cart 2.png" width="30px" height="30px"></a>
+            <img src="images/icons/menu icon 2.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+
+<!----cart items details-->
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/image 10.PNG" >
+                    <div>
+                        <p>Blue Denim Jacket</p>
+                        <small>price: $ 4500</small><br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1" ></td>
+            <td>$4500</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/image 9.JPG" >
+                    <div>
+                        <p>White Luxury Sweater</p>
+                        <small>price: $ 6500</small><br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1" ></td>
+            <td>$6500</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/image 2.JPG" >
+                    <div>
+                        <p>Red Plaid T-shirt</p>
+                        <small>price: $ 2500</small><br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1" ></td>
+            <td>$2500</td>
+        </tr>
+    </table>
+
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>$20,000</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>$750</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>$20,750</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+</div>
+
+
+ 
+<!----footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>download our app</h3>
+                    <p>download app for android and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="images/icons/download appstore.PNG">
+                        <img src="images/icons/download playstore.PNG">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/cart.jpg" alt="">
+                    <p>whatsapp details below</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>useful links</h3>
+                    <ul>
+                        <li>coupons</li>
+                        <li>blog posts</li>
+                        <li>return policy</li>
+                        <li>join affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>follow us</h3>
+                    <ul>
+                        <li>facebook</li>
+                        <li>twitter</li>
+                        <li>instagram</li>
+                        <li>youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">copyright 2023 catalyst coding</p>
+        </div>
+    </div>
+<!----js for toggle menu-->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+    else
+        {
+            MenuItems.style.maxHeight ="0px"
+        }
+    }
+</script>
+
+
+</body>
+</html>
